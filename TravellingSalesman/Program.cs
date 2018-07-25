@@ -10,6 +10,11 @@ namespace TravellingSalesman
     {
         static void Main(string[] args)
         {
+            List<Node> nodes = FileService.ReadFile();
+
+            Edges edges = new Edges(nodes);
+
+
         }
     }
 }
