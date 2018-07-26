@@ -29,5 +29,10 @@ namespace TravellingSalesman
             
             return nodes;
         }
+
+        public static Edges ReadDectination()
+        {
+            return null;
+        }
     }
 }

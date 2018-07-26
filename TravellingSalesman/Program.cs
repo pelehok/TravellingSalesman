@@ -10,11 +10,20 @@ namespace TravellingSalesman
     {
         static void Main(string[] args)
         {
-            List<Node> nodes = FileService.ReadFile();
+            List<Node> nodes = new List<Node>()
+            {
+                new Node(),
+                new Node(),
+                new Node(),
+                new Node()
+            }; 
+            nodes = FileService.ReadFile();
 
             Edges edges = new Edges(nodes);
+            Algorithm alg = new Algorithm(nodes,edges);
 
-
+            Console.WriteLine(alg.Result);
+            Console.ReadKey();
         }
     }
 }
